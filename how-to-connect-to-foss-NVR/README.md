@@ -12,7 +12,9 @@ We need to create RTSP credentials. Using the official app we have to go to `Set
 
 ## 3.1. Simple RTSP stream:
 High quality stream: `rtsp://username:password@IP_Address:554/stream1`
-Low quality strean: `rtsp://username:password@IP_Address:554/stream2`
+
+Low quality stream: `rtsp://username:password@IP_Address:554/stream2`
 
 ## 3.2. ONVIF
 `http://IP_Address:2020/onvif/device_service`
+and specify `username` and `password` when prompted to.
