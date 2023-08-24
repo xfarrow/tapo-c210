@@ -17,7 +17,7 @@ This repository aims to resolve these issues.
 * It runs a Linux kernel (3.10);
 
 ### Tapo C210
-* It uses a Linux Kernel (4.9.84)
+* It runs a Linux Kernel (4.9.84)
 
 ## Download
 There's nothing yet.
