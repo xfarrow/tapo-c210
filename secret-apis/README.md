@@ -60,9 +60,16 @@ with this `JSON` body
 	"method": "do", 
 	"motor": {
 		"movestep": {
-			"direction": "0"
+			"direction": "(direction_value)"
 		}
 	}
 }
 ```
-`direction` is a value between `0` and `360`. I have yet to understand how it works because it seems moving on the X-axis only or Y-axis only.
+`direction` can be one of these values
+
+direction | description
+-------|:-----------
+0 | It will move horizontally to 0°
+90 | It will move vertically to the uppermost point
+180 | It will move horizontally to 360° (yes)
+270 | Il will move vertically to the bottommost point
