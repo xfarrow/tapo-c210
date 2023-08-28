@@ -53,23 +53,23 @@ with this `JSON` body
 You must provide the value `admin` for `username`, and the MD5 hash of your Tp-Link account's password as the value of `password`. You will get a token named `stok`.
 
 ## Move the camera's motors
-Create a `POST` request to `https://ip_of_your_camera/stok=(your_stok)/ds`
+Create a `POST` request to `https://ip_of_your_camera/stok={your_stok}/ds`
 with this `JSON` body
 ```
 {
 	"method": "do", 
 	"motor": {
 		"movestep": {
-			"direction": "(direction_value)"
+			"direction": "direction_value"
 		}
 	}
 }
 ```
-`direction` can be one of these values
+`direction_value` can be one of these values
 
 direction | description
--------|:-----------
-0 | It will move horizontally to 0°
-90 | It will move vertically to the uppermost point
-180 | It will move horizontally to 360° (yes)
+----|-----------
+0   | It will move horizontally to the position 0°
+90  | It will move vertically to the uppermost point
+180 | It will move horizontally to the position 360°
 270 | Il will move vertically to the bottommost point
