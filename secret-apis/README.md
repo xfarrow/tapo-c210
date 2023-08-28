@@ -1,5 +1,5 @@
 # Secret APIs
-Tapo cameras provide non-documented APIs we can use to control the camera (like using its official app). I did not do anything, 
+Tapo cameras provide undocumented APIs we can use to control the camera (like using its official app). I did not do anything, 
 I am writing this document while looking at the code of the awesome project [pytapo](https://github.com/JurajNyiri/pytapo), which seems it does not have a documentation on
 the usage of the APIs yet.
 
