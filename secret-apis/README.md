@@ -42,7 +42,7 @@ with this `JSON` body
 
 ```
 {
-  "method": "login",
+	"method": "login",
 	"params" : {
 		"hashed" : true,
 		"password" : "MD5_UPPERCASE_HASH_OF_YOUR_TPLINK_ACCOUNT",
@@ -50,7 +50,7 @@ with this `JSON` body
 	}
 }
 ```
-You must provide the value `admin` for `username`, and the MD5 hash of your Tp-Link account as the value of `password`. You will get a token named `stok`.
+You must provide the value `admin` for `username`, and the MD5 hash of your Tp-Link account's password as the value of `password`. You will get a token named `stok`.
 
 ## Move the camera's motors
 Create a `POST` request to `https://ip_of_your_camera/stok=(your_stok)/ds`
