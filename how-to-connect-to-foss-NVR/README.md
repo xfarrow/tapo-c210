@@ -19,7 +19,7 @@ Low quality stream: `rtsp://username:password@IP_Address:554/stream2`
 
 ## 3.2. ONVIF
 `http://IP_Address:2020/onvif/device_service`
-and specify `username` and `password` when prompted to.
+and specify `username` and `password` when asked.
 
 ## 3.3 HTTP
-See [this resource](https://drmnsamoliu.github.io/video.html) but I did not test it.
+See [this resource](https://drmnsamoliu.github.io/video.html) but I did not test it. In this way we should be able to unlock a 2K video stream.
