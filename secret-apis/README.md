@@ -52,6 +52,18 @@ with this `JSON` body
 ```
 You must provide the value `admin` for `username`, and the MD5 hash of your Tp-Link account's password as the value of `password`. You will get a token named `stok`.
 
+You'll receive something like
+
+```
+{
+	"error_code": 0,
+	"result": {
+		"stok": "*****",
+		"user_group": "root"
+	}
+}
+```
+
 ## Move the camera's motors
 Create a `POST` request to `https://ip_of_your_camera/stok={your_stok}/ds`
 with this `JSON` body
