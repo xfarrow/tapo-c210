@@ -83,5 +83,5 @@ direction | description
 ----|-----------
 0   | It will move horizontally to the position 0°
 90  | It will move vertically to the uppermost point
-180 | It will move horizontally to the position 360°
+180 | It will move horizontally to the position 180°
 270 | Il will move vertically to the bottommost point
