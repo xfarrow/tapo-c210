@@ -1,0 +1,1520 @@
+_type: export
+__export_format: 4
+__export_date: 2023-09-17T20:45:02.763Z
+__export_source: insomnia.desktop.app:v2023.5.8
+resources:
+  - _id: req_71456ad666ba482981772647f34934a1
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983471829
+    created: 1694892617711
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: SetMediaEncrypt
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "setMediaEncrypt",
+        				"params": {
+        					"cet": {
+        						"media_encrypt": {
+        							"enabled": "on"
+        						}
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694892617711
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    parentId: null
+    modified: 1694808708677
+    created: 1694808669454
+    name: TapoCameraAPIs
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_c045d05a83be4566afe6bae4a5e42644
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983462257
+    created: 1694887244571
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: SetNotificationsConfig
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "setMsgPushConfig",
+        				"params": {
+        					"msg_push": {
+        						"chn1_msg_push_info": {
+        							"notification_enabled": "on",
+        							"rich_notification_enabled": "on"
+        						}
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694887052617
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2ed64ebc7bca46f4afd435fd18e9e4cf
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983459543
+    created: 1694887052517
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetNotificationsConfig
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getMsgPushConfig",
+        				"params": {
+        					"msg_push": {
+        						"name": [
+        							"chn1_msg_push_info"
+        						]
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694887052517
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e933dde35f6b4ee9a8977d7fdfc984ac
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983457012
+    created: 1694886834887
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: SetWhiteLampConfig_TEST
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "setWhitelampConfig",
+        				"params": {
+        					"image": {
+        						"switch": {
+        							"wtl_intensity_level": "5"
+        						}
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694886834887
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4f736836cfe84f369afbac69f9bb665b
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983454586
+    created: 1694886637675
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetWhiteLampConfig
+    description: Its meaning is obsure to me. Further details are required.
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getWhitelampConfig",
+        				"params": {
+        					"image": {
+        						"name": "switch"
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694868189344
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a6dfefd479344452939c73da610c9cd9
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983451605
+    created: 1694868189244
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: SetPrivacyMode
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "setLensMaskConfig",
+        				"params": {
+        					"lens_mask": {
+        						"lens_mask_info": {
+        							//
+        							// enabled: on | off
+        							//
+        							"enabled": "off"
+        						}
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694868189244
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_380fe1af2cbb40fda996fab6ed41e949
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983447689
+    created: 1694868082936
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetTime
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getClockStatus",
+        				"params": {
+        					"system": {
+        						"name": "clock_status"
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694867738274
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bd2d4c16a4a14dd3859593787633801a
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983444917
+    created: 1694867738174
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetDeviceInfo
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getDeviceInfo",
+        				"params": {
+        					"device_info": {
+        						"name": [
+        							"basic_info"
+        						]
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694867738174
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b9872f27b35046f99a7433bcd6f56d23
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983441543
+    created: 1694867677175
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetReverseWhitelampStatus
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "reverseWhitelampStatus",
+        				"params": {
+        					"image": {
+        						"reverse_wtl_status": [
+        							"null"
+        						]
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694867301363
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ed7c691243794920888a67a1533f59fe
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983437766
+    created: 1694867301263
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetWhitelampStatus
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getWhitelampStatus",
+        				"params": {
+        					"image": {
+        						"get_wtl_status": [
+        							"null"
+        						]
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694867301263
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_40b686dbc9f24a91ab27323c7d9df06b
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983435309
+    created: 1694867144750
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: Vhttpd
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "get",
+        	"cet": {
+        		"name": [
+        			"vhttpd"
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694867144750
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_594ac983c1384c7faf65bc667d6b55d9
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983432833
+    created: 1694867077061
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetAudioSpec
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "get",
+        	"audio_capability": {
+        		"name": [
+        			"device_speaker",
+        			"device_microphone"
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694867077061
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_458a1661e16f4ac9a80773ac43fa28f6
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983430120
+    created: 1694867026334
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetTargetTrackConfig
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getTargetTrackConfig",
+        				"params": {
+        					"target_track": {
+        						"name": [
+        							"target_track_info"
+        						]
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694865369844
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b09d5ded0c484cfa933db4f297a4d3fb
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983426935
+    created: 1694866935799
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetLedStatus
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getLedStatus",
+        				"params": {
+        					"led": {
+        						"name": [
+        							"config"
+        						]
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694865369744
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c96f83231a7f4d6a9bed641acf1c4346
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983423076
+    created: 1694865369644
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetRotationStatus
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        // What is this  used for?
+
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getRotationStatus",
+        				"params": {
+        					"image": {
+        						"name": [
+        							"switch"
+        						]
+        					}
+        				}
+        			}
+        		]
+        	},
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694865369644
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b1a7ea81e62b422795d8b640f46d9067
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983419628
+    created: 1694865240020
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetLastAlarmInfo
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getLastAlarmInfo",
+        				"params": {
+        					"msg_alarm": {
+        						"name": [
+        							"chn1_msg_alarm_info"
+        						]
+        					}
+        				}
+        			}
+        		]
+        	},
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694865240020
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_df875a42d0254b7d9cbfe7d3e4d18e20
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983416899
+    created: 1694857346967
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetMediaEncrypt
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getMediaEncrypt",
+        				"params": {
+        					"cet": {
+        						"name": [
+        							"media_encrypt"
+        						]
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694857346967
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_989326a10b76467a9a2711dabc296386
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983413209
+    created: 1694857131643
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetPrivacyMode
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getLensMaskConfig",
+        				"params": {
+        					"lens_mask": {
+        						"name": [
+        							"lens_mask_info"
+        						]
+        					}
+        				}
+        			}
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694857131643
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e66d4c8f8d76446992282c9b0825fd07
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983409059
+    created: 1694857027889
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetModuleSpecs
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "get",
+        	"function": {
+        		"name": [
+        			"module_spec"
+        		]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694857027889
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ae1a611917e444dcbf019afbea9aff2b
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983405727
+    created: 1694852115979
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetEvents_TEST
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        
+
+        // NOT WORKING
+        // NOT WORKING
+
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "searchDetectionList",
+        				"params": {
+        					"playback": {
+        						"search_detection_list": {
+        							"start_index": 0,
+        							"channel": 0,
+        							"start_time": "0",
+        							"end_time": "1701388800",
+        							"end_index": 999,
+        						}
+        					}
+        				}
+        			}
+        		]
+        	},
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694852115979
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6087001d0ccb4be9985be1253542fb87
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983398076
+    created: 1694811693841
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetConfiguration
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getDeviceInfo",
+        				"params": {
+        					"device_info": {
+        						"name": [
+        							"basic_info"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getDetectionConfig",
+        				"params": {
+        					"motion_detection": {
+        						"name": [
+        							"motion_det"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getPersonDetectionConfig",
+        				"params": {
+        					"people_detection": {
+        						"name": [
+        							"detection"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getVehicleDetectionConfig",
+        				"params": {
+        					"vehicle_detection": {
+        						"name": [
+        							"detection"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getBCDConfig",
+        				"params": {
+        					"sound_detection": {
+        						"name": [
+        							"bcd"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getPetDetectionConfig",
+        				"params": {
+        					"pet_detection": {
+        						"name": [
+        							"detection"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getBarkDetectionConfig",
+        				"params": {
+        					"bark_detection": {
+        						"name": [
+        							"detection"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getMeowDetectionConfig",
+        				"params": {
+        					"meow_detection": {
+        						"name": [
+        							"detection"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getGlassDetectionConfig",
+        				"params": {
+        					"glass_detection": {
+        						"name": [
+        							"detection"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getTamperDetectionConfig",
+        				"params": {
+        					"tamper_detection": {
+        						"name": "tamper_det"
+        					}
+        				},
+        			},
+        			{
+        				"method": "getLensMaskConfig",
+        				"params": {
+        					"lens_mask": {
+        						"name": [
+        							"lens_mask_info"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getLdc",
+        				"params": {
+        					"image": {
+        						"name": [
+        							"switch",
+        							"common"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getLastAlarmInfo",
+        				"params": {
+        					"msg_alarm": {
+        						"name": [
+        							"chn1_msg_alarm_info"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getLedStatus",
+        				"params": {
+        					"led": {
+        						"name": [
+        							"config"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getTargetTrackConfig",
+        				"params": {
+        					"target_track": {
+        						"name": [
+        							"target_track_info"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getPresetConfig",
+        				"params": {
+        					"preset": {
+        						"name": [
+        							"preset"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getFirmwareUpdateStatus",
+        				"params": {
+        					"cloud_config": {
+        						"name": "upgrade_status"
+        					}
+        				},
+        			},
+        			{
+        				"method": "getMediaEncrypt",
+        				"params": {
+        					"cet": {
+        						"name": [
+        							"media_encrypt"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getConnectionType",
+        				"params": {
+        					"network": {
+        						"get_connection_type": []
+        					}
+        				},
+        			},
+        			{
+        				"method": "getAlarmConfig",
+        				"params": {
+        					"msg_alarm": {}
+        				}
+        			},
+        			{
+        				"method": "getAlarmPlan",
+        				"params": {
+        					"msg_alarm_plan": {}
+        				}
+        			},
+        			{
+        				"method": "getSirenTypeList",
+        				"params": {
+        					"msg_alarm": {}
+        				}
+        			},
+        			{
+        				"method": "getLightTypeList",
+        				"params": {
+        					"msg_alarm": {}
+        				}
+        			},
+        			{
+        				"method": "getSirenStatus",
+        				"params": {
+        					"msg_alarm": {}
+        				}
+        			},
+        			{
+        				"method": "getLightFrequencyInfo",
+        				"params": {
+        					"image": {
+        						"name": "common"
+        					}
+        				},
+        			},
+        			{
+        				"method": "getLightFrequencyCapability",
+        				"params": {
+        					"image": {
+        						"name": "common"
+        					}
+        				},
+        			},
+        			{
+        				"method": "getChildDeviceList",
+        				"params": {
+        					"childControl": {
+        						"start_index": 0
+        					}
+        				},
+        			},
+        			{
+        				"method": "getRotationStatus",
+        				"params": {
+        					"image": {
+        						"name": [
+        							"switch"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getNightVisionModeConfig",
+        				"params": {
+        					"image": {
+        						"name": "switch"
+        					}
+        				},
+        			},
+        			{
+        				"method": "getWhitelampStatus",
+        				"params": {
+        					"image": {
+        						"get_wtl_status": [
+        							"null"
+        						]
+        					}
+        				},
+        			},
+        			{
+        				"method": "getWhitelampConfig",
+        				"params": {
+        					"image": {
+        						"name": "switch"
+        					}
+        				},
+        			},
+        			{
+        				"method": "getMsgPushConfig",
+        				"params": {
+        					"msg_push": {
+        						"name": [
+        							"chn1_msg_push_info"
+        						]
+        					}
+        				},
+        			},
+        		]
+        	},
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694811693841
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_53f196a3e90542df880fff36f741a351
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983393244
+    created: 1694811547516
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: ManualAlarm
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "do",
+        	"msg_alarm": {
+        		"manual_msg_alarm": {
+        			//
+        			// action: start | stop
+        			//
+        			"action": "stop"
+        		}
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694811423274
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_916cdf65567a4b738c862acaf6207141
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983388547
+    created: 1694811423174
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: GetUserId
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        // What is its purpose?
+        {
+        	"method": "multipleRequest",
+        	"params": {
+        		"requests": [
+        			{
+        				"method": "getUserID",
+        				"params": {
+        					"system": {
+        						"get_user_id": "null"
+        					}
+        				},
+        			}
+        		]
+        	},
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694811423174
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_58b7f6a2dd2745b88d5871fff3d76318
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983383537
+    created: 1694811348469
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: Calibration
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "do",
+        	"motor": {
+        		"manual_cali": ""
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694811348469
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b76aad7a89444eecabb6a67856aa34da
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983379863
+    created: 1694810244968
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: Capabilities
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "get", 
+        	"motor": {
+        		"name": ["capability"]
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694810244968
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_47ef236f7af345a4baf1228a9c192028
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983375984
+    created: 1694810674305
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: MoveMotor
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "do",
+        	"motor": {
+        		"move": {
+        			//
+        			// x_coord can be a number between -360
+        			// and +360 indicating the degree of 
+        			// horizontal movement
+        			// from the current point.
+        			//
+        			// y_coord can be a number between -45
+        			// and +45 indicating the degree of 
+        			// vertical movement
+        			// from the current point.
+        			//
+        			// Can not be both 0 (No operation error)
+        			"x_coord": "0",
+        			"y_coord": "0"
+        		}
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694809887331
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_057ce3ea334b4e43b8d3ef33f4d908c0
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983356719
+    created: 1694809529694
+    url: https://{cameraa_ip}/stok={stok}/ds
+    name: MoveMotorStep
+    description: Move the servomotor at fixed positions.
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "do", 
+        	"motor": {
+        		"movestep": {
+        			//
+        			// The possible values for direction are:
+        			//	0 		: 		0° horizontal movement
+        			//	90 		:		Topmost position
+        			//	180 	: 	360° horizontal movement
+        			//	270 	: Bottomost position
+        			//
+        			"direction": "0"
+        		}
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1694809529694
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_905df7bf2a6f499abdb3677cc7aa7caa
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694983300749
+    created: 1694808712969
+    url: https://{camera_ip}
+    name: GetStok
+    description: It is required to get a token before calling any API.
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"method": "login",
+        	"params" : {
+        		"hashed" : true,
+        		//
+        		// password must be the UPPERCASE MD5 hash
+        		// of your Tp-Link account's password
+        		//
+        		"password" : "***",
+        		"username" : "admin"
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json; charset=UTF-8
+        id: pair_e509a2483ade4ba2bdcaa0d2a3a761e8
+        disabled: false
+      - name: User-Agent
+        value: Tapo CameraClient Android
+        id: pair_a45a81ee1bb34e0fac58c4ee30f76c03
+        disabled: true
+      - id: pair_f65fc60e7b8d41c289c5a5bb198925aa
+        name: Host
+        value: 192.168.1.103
+        description: ""
+        disabled: true
+      - id: pair_45f581e3e00b4838b1027af74dd40eef
+        name: Accept
+        value: application/json
+        description: ""
+        disabled: false
+      - id: pair_ffd0d070f8d04a65b76708cf1c0c7dd8
+        name: Accept-Encoding
+        value: gzip, deflate
+        description: ""
+        disabled: true
+      - id: pair_2b39ab255d884f0cada123f7c8c3bc66
+        name: Connection
+        value: close
+        description: ""
+        disabled: true
+      - id: pair_ec97b64868504914973911c5cc0a6a0d
+        name: requestByApp
+        value: "true"
+        description: ""
+        disabled: true
+    authentication: {}
+    metaSortKey: -1694808712969
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_3376408182cd4e0d4a25030b3f2102b62ef96643
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694808669460
+    created: 1694808669460
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1694808669460
+    _type: environment
+  - _id: jar_3376408182cd4e0d4a25030b3f2102b62ef96643
+    parentId: wrk_d8d85c0e14ef4b49970b469bd301ca6c
+    modified: 1694808669462
+    created: 1694808669462
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
