@@ -1,26 +1,14 @@
 # Secret APIs
-Tapo cameras provide undocumented APIs we can use to control the camera (like using its official app). I did not do anything, 
-I am writing this document while looking at the code of the awesome project [pytapo](https://github.com/JurajNyiri/pytapo), which seems it does not have a documentation on
-the usage of the APIs yet.
+Tapo cameras provide undocumented APIs we can use to control the camera (like using its official app).
+You can download my [Insomnia](https://github.com/Kong/insomnia) API suite [at this link](https://github.com/xfarrow/tapo-camera/blob/main/secret-apis/TapoCameraAPIs.yaml). The suite is not complete yet.
 
-## Preface
-The APIs are accessed via `HTTP` requests.
+I am writing this suite also by giving a look at the code of the awesome project [pytapo](https://github.com/JurajNyiri/pytapo).
 
-## Headers
-There are the headers `pytapo` uses, probably not all of them are necessary:
-```
-> Host: [camera ip]
-> Content-Type: application/json; charset=UTF-8
-> User-Agent: Tapo CameraClient Android
-> Accept: application/json
-> Accept-Encoding: gzip, deflate
-> Connection: close
-> requestByApp: true
-```
-
-You must use these headers for each call.
+## Getting a Stok
+Each API call is in the form `https://{cameraa_ip}/stok={stok}/ds`, hence you need your camera's IP and a token, called stok. You can obtain the stok by calling the `GetStok` request. Keep in mind that this token expires every `x` minutes (did not test the actual expiration time).
 
 ## Error codes
+```
     "-40401": "Invalid stok value",
     "-40210": "Function not supported",
     "-64303": "Action cannot be done while camera is in patrol mode.",
@@ -33,55 +21,4 @@ You must use these headers for each call.
     "-40209": "Invalid login credentials",
     "-64304": "Maximum Pan/Tilt range reached",
     "-71103": "User ID is not authorized",
-
-## Get token
-To use the camera's functionalities, we need to get a token first (also called stok).
-
-Create a `POST` request to `https://ip_of_your_camera`
-with this `JSON` body
-
 ```
-{
-	"method": "login",
-	"params" : {
-		"hashed" : true,
-		"password" : "MD5_UPPERCASE_HASH_OF_YOUR_TPLINK_ACCOUNT",
-		"username" : "admin"
-	}
-}
-```
-You must provide the value `admin` for `username`, and the MD5 hash of your Tp-Link account's password as the value of `password`. You will get a token named `stok`.
-
-You'll receive something like
-
-```
-{
-	"error_code": 0,
-	"result": {
-		"stok": "*****",
-		"user_group": "root"
-	}
-}
-```
-
-## Move the camera's motors
-Create a `POST` request to `https://ip_of_your_camera/stok={your_stok}/ds`
-with this `JSON` body
-```
-{
-	"method": "do", 
-	"motor": {
-		"movestep": {
-			"direction": "direction_value"
-		}
-	}
-}
-```
-`direction_value` can be one of these values
-
-direction | description
-----|-----------
-0   | It will move horizontally to the position 0°
-90  | It will move vertically to the uppermost point
-180 | It will move horizontally to the position 360°
-270 | Il will move vertically to the bottommost point
