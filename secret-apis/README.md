@@ -1,6 +1,6 @@
 # Secret APIs
 Tapo cameras provide undocumented APIs we can use to control them (simulating the use of their official app).
-You can download my [Insomnia](https://github.com/Kong/insomnia) API collection [at this link](https://github.com/xfarrow/tapo-camera/blob/main/secret-apis/TapoCameraAPIs.yaml). The collection is not complete yet.
+You can download my [Insomnia](https://insomnia.rest/) API collection [at this link](https://github.com/xfarrow/tapo-camera/blob/main/secret-apis/TapoCameraAPIs.yaml). The collection is not complete yet.
 
 I am writing this collection also by giving a look at the code of the awesome project [pytapo](https://github.com/JurajNyiri/pytapo).
 
