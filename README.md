@@ -4,7 +4,7 @@ There are better resources than mine: see https://github.com/nervous-inhuman/tpl
 
 In particular, I will focus on 
 * the reverse engineering of the app in order to be able to use the camera without a Tp-Link account;
-* the reverse engineering of the firmware to strip off the portions of code sending the video stream to their servers.
+* the reverse engineering of the firmware to strip off the portions of code sending the video stream to their servers (I do not have the .bin firmware yet. It should be located at download.tplinkcloud.com/firmware/Tapo_C210v2.6_us_1.3.4_Build_230222 but it needs a key. If someone tcpdumps the connection from the camera should be able to obtain the link).
 
 ## How these cameras were designed to work
 1. You download a proprietary app (Tp-Link Tapo) and create an account without which the camera can not work;
