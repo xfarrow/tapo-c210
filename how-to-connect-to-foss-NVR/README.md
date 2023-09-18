@@ -22,8 +22,9 @@ High quality stream: `rtsp://username:password@IP_Address:554/stream1`
 Low quality stream: `rtsp://username:password@IP_Address:554/stream2`
 
 ### ONVIF
-`http://IP_Address:2020/onvif/device_service`
-and specify `username` and `password` when asked.
+`http://IP_Address:2020/onvif/device_service` and specify `username` and `password` when asked.
+
+Using ONVIF will allow the NVR to properly configure the PTZ controls, allowing the camera to pan and tilt.
 
 ### HTTP (unofficial, needs more analysis)
 See [this resource](https://drmnsamoliu.github.io/video.html) but I did not test it. In this way we should be able to unlock a 2K video stream.
