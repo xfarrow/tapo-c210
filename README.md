@@ -4,7 +4,7 @@ There are better resources than mine: see https://github.com/nervous-inhuman/tpl
 
 In particular, I will focus on 
 * the reverse engineering of the app in order to be able to use the camera without a Tp-Link account;
-* the reverse engineering of the firmware to strip off the portions of code sending the video stream to their servers (I do not have the .bin firmware yet. It should be located at download.tplinkcloud.com/firmware/Tapo_C210v2.6_us_1.3.4_Build_230222 but it needs a key. If someone tcpdumps the connection from the camera should be able to obtain the link).
+* the reverse engineering of the firmware to strip off the portions of code sending the video stream to their servers, or better self-compile a clean firmware. **Good news** you can install [OpenIPC](https://openipc.org/), having a look at [this link](https://openipc.org/cameras/vendors/sigmastar/socs/ssc335)
 
 ## How these cameras were designed to work
 1. You download a proprietary app (Tp-Link Tapo) and create an account without which the camera can not work;
