@@ -22,3 +22,6 @@ Each API call is in the form `https://{cameraa_ip}/stok={stok}/ds`, hence you ne
     -64304: Maximum Pan/Tilt range reached
     -71103: User ID is not authorized
 ```
+
+## More
+The APIs provide more pieces of information than the official app. For example the camera somehow geotagged itself (I never gave the permission to the app to use location services, probably the camera is using public IP's location to determine its position). This is not clearly shown to the end user, and carries privacy and security implications. This further proves the necessity to create libre solutions for these cameras.
