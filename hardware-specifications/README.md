@@ -1,6 +1,7 @@
 # Hardware specifications
 
-## Tapo C210
+## Given infos
+
 - **Field of view:** 360° horizontal
 - **Video definition:** 2K (2304x1296)
 - **Audio:** Two-way (built-in microphone and speaker)
@@ -8,7 +9,7 @@
 - **Wireless Protocol:** IEEE 802.11 b/g/n, 2.4GHz
 - **Adapter output:** 9V, 0.6A, DC Power
 
-### Led indication
+## Led indication
 
 - **Solid red:** Starting up
 - **Blinking red and green:** Ready for setup
@@ -17,6 +18,9 @@
 - **Solid green:** Connected to Tp-Link Cloud server
 - **Blinking red quickly:** Camera resetting
 - **Blinking green quickly:** Camera updating
+
+## Inferred infos
+- **Processor:** MStar SSC335 [hardware schemas](https://linux-chenxing.org/infinity6/ssc335_pb_v03.pdf)
 
 ### Reset button
 Press and hold the reset button for at least 5 seconds until the LED blinks red. The camera will reset and reboot.
