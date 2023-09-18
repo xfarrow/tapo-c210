@@ -5,7 +5,7 @@ You can download my [Insomnia](https://insomnia.rest/) API collection [at this l
 I am writing this collection also by giving a look at the code of the awesome project [pytapo](https://github.com/JurajNyiri/pytapo).
 
 ## Getting a Stok
-Each API call is in the form `https://{cameraa_ip}/stok={stok}/ds`, hence you need your camera's IP and a token, called stok. You can obtain the stok by calling `GetStok`. Keep in mind that this token expires every `x` minutes (I did not test the actual expiration time yet).
+Each API call is in the form `https://{camera_ip}/stok={stok}/ds`, hence you need your camera's IP and a token, called stok. You can obtain the stok by calling `GetStok`. Keep in mind that this token expires every `x` minutes (I did not test the actual expiration time yet).
 
 ## Error codes
 ```
