@@ -6,7 +6,7 @@ There are some better resources than mine: see https://github.com/nervous-inhuma
 In particular, I will focus on 
 
 * the reverse engineering of the app in order to be able to use the camera without a Tp-Link account;
-* <del style="text-decoration: line-through;"> the reverse engineering of the firmware to strip off the portions of code sending the video stream to their servers, or better self-compile a clean firmware.</del> **Good news** you can install [OpenIPC](https://openipc.org/) ([here for our hardware-specific version](https://openipc.org/cameras/vendors/sigmastar/socs/ssc335)) and [linux-chenxing](https://github.com/linux-chenxing), so we do not need any reverse engineering, at most contributing to these projects.
+* <del style="text-decoration: line-through;"> the reverse engineering of the firmware to strip off the portions of code sending the video stream to their servers, or better self-compile a clean firmware.</del> **Good news** you can install [OpenIPC](https://openipc.org/) ([here for our hardware-specific version](https://openipc.org/cameras/vendors/sigmastar/socs/ssc335), with memory chip NOR 8M) and [linux-chenxing](https://github.com/linux-chenxing), so we do not need any reverse engineering, at most contributing to these projects.
 
 ## How these cameras were designed to work
 1. You download a proprietary app (Tp-Link Tapo) and create an account without which the camera can not work;
