@@ -1,10 +1,12 @@
 # C210 Tapo camera
 IP Cameras are a nightmare for our privacy. For this reason I am reverse engineering a Tp-Link Tapo C210's firmware and its relative app in order to prevent them from sending any data to untrusted servers.
-There are better resources than mine: see https://github.com/nervous-inhuman/tplink-tapo-c200-re and https://drmnsamoliu.github.io/. **Be careful** use those resources mindfully, as they are about Tapo C200, whereas this repository focuses on the C210. Despite being esthetically equivalent and having a similar name, their hardware is completely different. The C200 is based on a MIPS microprocessor, whereas the C210 is based on the ARM-based MStar SSC335 chipset.
+
+There are some better resources than mine: see https://github.com/nervous-inhuman/tplink-tapo-c200-re and https://drmnsamoliu.github.io/, but use those resources mindfully, as they are about Tapo C200, whereas this repository focuses on the C210. Despite being esthetically equivalent and having a similar name, their hardware is completely different. The C200 is based on a MIPS microprocessor, whereas the C210 is based on the ARM-based MStar SSC335 chipset.
 
 In particular, I will focus on 
+
 * the reverse engineering of the app in order to be able to use the camera without a Tp-Link account;
-* the reverse engineering of the firmware to strip off the portions of code sending the video stream to their servers, or better self-compile a clean firmware. **Good news** you can install [OpenIPC](https://openipc.org/), having a look at [this link](https://openipc.org/cameras/vendors/sigmastar/socs/ssc335)
+* <del style="text-decoration: line-through;"> the reverse engineering of the firmware to strip off the portions of code sending the video stream to their servers, or better self-compile a clean firmware.</del> **Good news** you can install [OpenIPC](https://openipc.org/) ([here for our hardware-specific version](https://openipc.org/cameras/vendors/sigmastar/socs/ssc335)) and [linux-chenxing](https://github.com/linux-chenxing), so we do not need any reverse engineering, at most contributing to these projects.
 
 ## How these cameras were designed to work
 1. You download a proprietary app (Tp-Link Tapo) and create an account without which the camera can not work;
@@ -17,6 +19,6 @@ As of today, we have:
 * Libre NVR solutions (iSpy, ZoneMinder, ...);
 * A collection of open source software to control these cameras through [undocumented APIs](https://github.com/xfarrow/tapo-camera/tree/main/secret-apis), see [my collection](https://github.com/stars/xfarrow/lists/tapo-cameras).
 
-Nonethless, you still need the proprietary app and a Tp-Link account the first time you boot the camera up and NVRs will not stop the camera from sending the video stream to their servers without using a firewall.
+Nonethless, if you use these solutions, you still need the proprietary app and a Tp-Link account the first time you boot the camera up and NVRs will not stop the camera from sending the video stream to their servers without using a firewall.
 
-This repository aims to resolve these issues.
+* Installing [OpenIPC](https://openipc.org/) or [linux-chenxing](https://github.com/linux-chenxing)
