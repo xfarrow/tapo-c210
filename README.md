@@ -1,4 +1,7 @@
 # C210 Tapo camera
+<p align="center">
+<img src="/img/tapo_c210.jpg" height="300" width="300">
+</p>
 IP Cameras are a nightmare for our privacy. For this reason I am reverse engineering a Tp-Link Tapo C210's firmware and its relative app in order to prevent them from sending any data to untrusted servers.
 
 There are some better resources than mine: see https://github.com/nervous-inhuman/tplink-tapo-c200-re and https://drmnsamoliu.github.io/, but use those resources mindfully, as they are about Tapo C200, whereas this repository focuses on the C210. Despite being esthetically equivalent and having a similar name, their hardware is completely different. The C200 is based on a MIPS microprocessor, whereas the C210 is based on the ARM-based MStar SSC335 chipset.
