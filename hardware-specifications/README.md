@@ -8,8 +8,9 @@
 - **Night vision:** 850nm IR LED (up to 30ft)
 - **Wireless Protocol:** IEEE 802.11 b/g/n, 2.4GHz
 - **Adapter output:** 9V, 0.6A, DC Power
+- **Reset button:** Press and hold the reset button for at least 5 seconds until the LED blinks red. The camera will reset and reboot.
 
-## Led indication
+### Led indication
 
 - **Solid red:** Starting up
 - **Blinking red and green:** Ready for setup
@@ -22,5 +23,5 @@
 ## Inferred infos
 - **Processor:** MStar SSC335 [hardware schemas](https://linux-chenxing.org/infinity6/ssc335_pb_v03.pdf)
 
-### Reset button
-Press and hold the reset button for at least 5 seconds until the LED blinks red. The camera will reset and reboot.
+
+
