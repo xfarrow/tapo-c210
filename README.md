@@ -1,4 +1,4 @@
-# C210 Tapo camera
+# Tapo C210
 <p align="center">
 <img src="/img/tapo_c210.jpg" height="300" width="300">
 </p>
