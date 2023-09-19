@@ -6,7 +6,7 @@ There are some better resources than mine: see https://github.com/nervous-inhuma
 In particular, I will focus on 
 
 * the reverse engineering of the app in order to be able to use the camera without a Tp-Link account;
-* <del style="text-decoration: line-through;"> the reverse engineering of the firmware to strip off the portions of code sending the video stream to their servers, or better self-compile a clean firmware.</del> **Good news** you can install [OpenIPC](https://openipc.org/) ([here for our hardware-specific version](https://openipc.org/cameras/vendors/sigmastar/socs/ssc335), with memory chip NOR 8M) and [linux-chenxing](https://github.com/linux-chenxing), so we do not need any reverse engineering, at most contributing to these projects.
+* <del style="text-decoration: line-through;"> the reverse engineering of the firmware to strip off the portions of code sending the video stream to their servers, or better self-compile a clean firmware.</del> **Good news** you can install [OpenIPC](https://openipc.org/) ([here for our hardware-specific version](https://openipc.org/cameras/vendors/sigmastar/socs/ssc335), with memory chip NOR 8M) and [linux-chenxing](https://github.com/linux-chenxing), so we do not need any reverse engineering, at most we need to contribute to these projects.
 
 ## How these cameras were designed to work
 1. You download a proprietary app (Tp-Link Tapo) and create an account without which the camera can not work;
@@ -19,6 +19,9 @@ As of today, we have:
 * Libre NVR solutions (iSpy, ZoneMinder, ...);
 * A collection of open source software to control these cameras through [undocumented APIs](https://github.com/xfarrow/tapo-camera/tree/main/secret-apis), see [my collection](https://github.com/stars/xfarrow/lists/tapo-cameras).
 
-Nonethless, if you use these solutions, you still need the proprietary app and a Tp-Link account the first time you boot the camera up and NVRs will not stop the camera from sending the video stream to their servers without using a firewall.
+Nonethless, if you use these solutions only, you still need the proprietary app and a Tp-Link account the first time you boot the camera up and NVRs will not stop the camera from sending the video stream to their servers without using a firewall.
 
 * Installing [OpenIPC](https://openipc.org/) or [linux-chenxing](https://github.com/linux-chenxing)
+
+## Disclaimer
+The author(s) of this document are not affiliated to TpLink, Tapo, or any company. The instructions present here are not meant to be followed, but rather, they're used to demonstrate what these cameras are capable of. No warranty is provided if you follow these instructions. Remember that any unauthorized modification can result in unrecoverable malfunctioning, a void warranty, and infringement of law, especially if meant to compromise a 3rd person.
