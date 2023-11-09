@@ -21,7 +21,7 @@
 - **Blinking green quickly:** Camera updating
 
 ## Inferred infos
-- **Processor:** SigmaStar SSC335 [hardware schemas](https://linux-chenxing.org/infinity6/ssc335_pb_v03.pdf)
+- **Processor:** SigmaStar SSC335 [documentation](https://linux-chenxing.org/infinity6/ssc335_pb_v03.pdf), [more infos](https://www.unifore.net/product-highlights/sigmastar-mstar-security-camera-module.html)
 
 
 
